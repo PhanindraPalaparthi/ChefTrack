@@ -51,6 +51,46 @@ This application helps large food establishments manage their inventory by:
 - **Notification Service**: Push notifications and alerts
 - **Chat System**: Real-time messaging functionality
 
+- ## 📱 Features  
+
+### Core Features  
+- ✅ Barcode scanning for quick product entry  
+- ✅ Automated expiry date alerts  
+- ✅ Real-time inventory monitoring  
+- ✅ Expense and budget tracking  
+- ✅ Wastage reduction analytics  
+- ✅ Team chat communication  
+- ✅ Dashboard with detailed reports  
+- ✅ Multi-user role-based access  
+
+### Planned Features  
+- 🔄 Integration with supplier APIs  
+- 🔄 Advanced analytics & forecasting  
+- 🔄 Push notifications  
+- 🔄 Report generation & export  
+- 🔄 Multi-location inventory support  
+
+## 📊 Database Schema  
+
+### products  
+Product info & barcodes  
+
+### inventory  
+Current stock levels  
+
+### users  
+User accounts & permissions  
+
+### alerts  
+Expiry & low-stock notifications  
+
+### transactions  
+Inventory movements  
+
+### messages  
+Team chat messages  
+
+
 ### Screenshots:
 <table> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/8e839148-67d9-48ce-a08b-1602f150dc57" width="250"/><br/> <b>Starting App</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/18bb00cd-98e7-442e-b0ae-97cd5b6be753" width="250"/><br/> <b>Signup</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/2d369161-e755-407b-8373-b04ddd60d051" width="250"/><br/> <b>Signin</b> </td> </tr> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/3ced6732-03d3-4b4d-b929-aa6c54b13687" width="250"/><br/> <b>Dashboard</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/29e53dfb-f7f4-4a55-9aac-40f9ba0b0ad5" width="250"/><br/> <b>Barcode Scanning</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/8bfc8325-a521-46a1-a878-8e750f36de02" width="250"/><br/> <b>Scanned Item</b> </td> </tr> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/89cd8104-beef-47d0-ab09-7a3f5a84bd68" width="250"/><br/> <b>Alerts</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/2d154c5a-d7a8-498d-bc70-d96029364ff2" width="250"/><br/> <b>Team Chat</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/72f886b3-685d-4627-b81b-3d7b1c204fcd" width="250"/><br/> <b>Account Manager</b> </td> </tr> </table>
 ## 🛠️ Installation & Setup
@@ -151,24 +191,6 @@ Database: Use MongoDB Atlas for cloud hosting
 
 Frontend: Build APK/iOS app for distribution
 
-## 📱 Features  
-
-### Core Features  
-- ✅ Barcode scanning for quick product entry  
-- ✅ Automated expiry date alerts  
-- ✅ Real-time inventory monitoring  
-- ✅ Expense and budget tracking  
-- ✅ Wastage reduction analytics  
-- ✅ Team chat communication  
-- ✅ Dashboard with detailed reports  
-- ✅ Multi-user role-based access  
-
-### Planned Features  
-- 🔄 Integration with supplier APIs  
-- 🔄 Advanced analytics & forecasting  
-- 🔄 Push notifications  
-- 🔄 Report generation & export  
-- 🔄 Multi-location inventory support  
 
 ---
 
@@ -210,22 +232,3 @@ class AppConfig {
   static const bool enableDebugMode = true;
 }
 
-## 📊 Database Schema  
-
-### products  
-Product info & barcodes  
-
-### inventory  
-Current stock levels  
-
-### users  
-User accounts & permissions  
-
-### alerts  
-Expiry & low-stock notifications  
-
-### transactions  
-Inventory movements  
-
-### messages  
-Team chat messages  

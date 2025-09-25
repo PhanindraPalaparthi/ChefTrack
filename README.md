@@ -69,37 +69,35 @@ This application helps large food establishments manage their inventory by:
    git clone <repository-url>
    cd food-inventory-management
 
-
-⚡ Getting Started
-🔹 Backend Setup
+**
+###⚡ Getting Started
+###🔹 Backend Setup**
 
 Install dependencies
-
 pip install -r requirements.txt
 
 
-Configure MongoDB
+**###Configure MongoDB**
 
 # Start MongoDB service
 # Update database settings in settings.py
 
 
-Run migrations
+###**Run migrations**
 
 python manage.py makemigrations
 python manage.py migrate
 
 
-Create superuser
-
+###**Create superuser**
 python manage.py createsuperuser
 
-
-Start development server
+**
+###Start development server**
 
 python manage.py runserver
 
-🔹 Frontend Setup
+###**🔹 Frontend Setup**
 
 Navigate to frontend:
 

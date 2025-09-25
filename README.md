@@ -151,62 +151,81 @@ Database: Use MongoDB Atlas for cloud hosting
 
 Frontend: Build APK/iOS app for distribution
 
-📱 Features
-Core Features
+## 📱 Features  
 
-✅ Barcode scanning for quick product entry
-✅ Automated expiry date alerts
-✅ Real-time inventory monitoring
-✅ Expense and budget tracking
-✅ Wastage reduction analytics
-✅ Team chat communication
-✅ Dashboard with detailed reports
-✅ Multi-user role-based access
+### Core Features  
+- ✅ Barcode scanning for quick product entry  
+- ✅ Automated expiry date alerts  
+- ✅ Real-time inventory monitoring  
+- ✅ Expense and budget tracking  
+- ✅ Wastage reduction analytics  
+- ✅ Team chat communication  
+- ✅ Dashboard with detailed reports  
+- ✅ Multi-user role-based access  
 
-Planned Features
+### Planned Features  
+- 🔄 Integration with supplier APIs  
+- 🔄 Advanced analytics & forecasting  
+- 🔄 Push notifications  
+- 🔄 Report generation & export  
+- 🔄 Multi-location inventory support  
 
-🔄 Integration with supplier APIs
-🔄 Advanced analytics & forecasting
-🔄 Push notifications
-🔄 Report generation & export
-🔄 Multi-location inventory support
+---
 
-📄 API Documentation
-Base URL
+## 📄 API Documentation  
 
+### Base URL  
 http://localhost:8000/api/
 
-Endpoints
-GET /products/ → List all products
-POST /products/ → Add new product
-GET /inventory/ → Get inventory status
-POST /inventory/scan/ → Process barcode scan
-GET /alerts/ → Get expiry alerts
-POST /chat/messages/ → Send chat message
+markdown
+Copy code
 
-🔧 Configuration
-Environment Variables
-Create a .env in backend:
+### Endpoints  
+- `GET /products/` → List all products  
+- `POST /products/` → Add new product  
+- `GET /inventory/` → Get inventory status  
+- `POST /inventory/scan/` → Process barcode scan  
+- `GET /alerts/` → Get expiry alerts  
+- `POST /chat/messages/` → Send chat message  
+
+---
+
+## 🔧 Configuration  
+
+### Environment Variables  
+Create a **.env** in backend:  
+```env
 DEBUG=True
 SECRET_KEY=your-secret-key
 DATABASE_URL=mongodb://localhost:27017/inventory_db
 ALLOWED_HOSTS=localhost,127.0.0.1
-
 Flutter Config
 Update lib/config/app_config.dart:
 
+dart
+Copy code
 class AppConfig {
   static const String apiBaseUrl = 'http://localhost:8000/api/';
   static const String appName = 'Inventory Manager';
   static const bool enableDebugMode = true;
 }
 
-📊 Database Schema
+## 📊 Database Schema  
 
-products → Product info & barcodes
-inventory → Current stock levels
-users → User accounts & permissions
-alerts → Expiry & low-stock notifications
-transactions → Inventory movements
-messages → Team chat messages
+### products  
+Product info & barcodes  
 
+### inventory  
+Current stock levels  
+
+### users  
+User accounts & permissions  
+
+### alerts  
+Expiry & low-stock notifications  
+
+### transactions  
+Inventory movements  
+
+### messages  
+Team chat messages  

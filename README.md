@@ -209,3 +209,4 @@ users → User accounts & permissions
 alerts → Expiry & low-stock notifications
 transactions → Inventory movements
 messages → Team chat messages
+

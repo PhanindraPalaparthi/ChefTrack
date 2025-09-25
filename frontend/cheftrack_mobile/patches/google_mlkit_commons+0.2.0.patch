@@ -1,0 +1,8 @@
+*** Begin Patch
+*** Update File: android/build.gradle
+@@ android {
+-    compileSdkVersion 29
++    // required for AGP 7.1+
++    namespace 'com.google.mlkit.commons'
++    compileSdkVersion 29
+*** End Patch

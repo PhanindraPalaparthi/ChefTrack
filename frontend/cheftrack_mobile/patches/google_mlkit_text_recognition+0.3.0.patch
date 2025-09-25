@@ -1,0 +1,8 @@
+*** Begin Patch
+*** Update File: android/build.gradle
+@@ android {
+-    compileSdkVersion 33
++    // required for AGP 7.1+
++    namespace 'com.google.mlkit.text_recognition'
++    compileSdkVersion 33
+*** End Patch
